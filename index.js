@@ -374,7 +374,9 @@ app.put("/favourite-recipe/:id", async (req, res) => {
     });
   }
 });
-
-app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Backend server is running on port ${PORT}`);
+app.listen("0.0.0.0", () => {
+  console.log("Server is running on port 5000");
 });
+// app.listen(PORT, "0.0.0.0", () => {
+//   console.log(`Backend server is running on port ${PORT}`);
+// });
