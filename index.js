@@ -33,12 +33,21 @@ const transporter = nodemailer.createTransport({
   }
 });
 
+// const db=mysql2.createConnection({
+//    host:"localhost",
+//    user:"root",
+//    password:"root@123",
+//    database:"recipedb"
+// }).promise();
+
+//live connection 
 const db=mysql2.createConnection({
-   host:"localhost",
+   host:"mysql.railway.internal",
    user:"root",
-   password:"root@123",
-   database:"recipedb"
+   password:"EDmPKJVBhXMlOaPEJqzhyLrLlOqlvYyt",
+   database:"railway"
 }).promise();
+
 console.log("Database Connected Successfully");
    
 app.get("/", (req, res) => {
