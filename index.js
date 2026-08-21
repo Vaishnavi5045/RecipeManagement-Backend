@@ -1,0 +1,1 @@
+console.log('Backend server is running on port 5000');
